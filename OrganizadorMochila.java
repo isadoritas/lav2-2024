@@ -15,11 +15,4 @@ public class OrganizadorMochila {
       return max(valItens[n-1] + organizarMochila(capacidade - pesoItens[n-1], pesoItens, valItens, n-1), organizarMochila(capacidade, pesoItens, valItens, n-1));
   }
 
-  public static void main(String args[]) {
-    int valItens[] = new int[]{60, 100, 120};
-    int pesoItens[] = new int[]{10, 20, 30};
-    int capacidade = 50;
-    int n = valItens.length;
-    System.out.println("O valor máximo alcançado com a menor quantidade de itens, delimitado pelo valor máximo de capacidade da mochila foi de R$" + organizarMochila(capacidade, pesoItens, valItens, n));
-  }
 }
